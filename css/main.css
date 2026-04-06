@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* nav */
+nav {
+  width: 100%;
+  font-size: 13px;
+  padding: 20px 8px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+nav > a:hover {
+  text-decoration: underline;
+}
+/* navIcon */
+.navIcon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navICon-a {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.navICon-a:hover {
+  opacity: 1;
+}
+.navICon-a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.navICon-a:hover::after {
+  opacity: 1;
+}
+.navICon-a::before {
+  content: attr(aria-label);
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  padding:5px 10px;
+  border-radius: 3px;
+  /* 글자 줄바꿈 방지 */
+  white-space: nowrap;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: #222;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  color: #fff;
+}
+.navICon-a:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.navICon-a svg {
+  width: 100%;
+}
+/* login */
+#login{
+    padding: 3px 12px;
+    color: #fff;
+    border: 0;
+    background-color: #4484f3;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* 메인 */
+.main-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 171px;
+}
+.g-logo{
+    /* mask-image :  이미지는 안보이고, 모양만 남고 색으로 채워짐 */
+    mask-image:url("../images/google_logo.svg");
+    width: 272px;
+    height: 92px;
+    background-color: #ff0572;
+}
