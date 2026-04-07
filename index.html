@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -46,13 +55,95 @@
       </div>
     </nav>
     <!-- 메인 -->
-     <main class="main-wrap">
-         <!-- 로고 -->
-          <div class="g-logo">
-          </div>
+    <main class="main-wrap">
+      <!-- 로고 -->
+      <div class="g-logo"></div>
+      <!-- 검색 입력창 -->
+      <div class="search_bar">
+        <!-- left -->
+        <div class="left">
+          <!-- 아이콘 -->
+          <i class="fa-solid fa-magnifying-glass"></i>
           <!-- 검색 입력창 -->
-           <!-- 검색리스트 -->
-            <!-- 검색 버튼 -->
-      </body>
-     </main>
+          <input type="text" placeholder="google 검색 또는 URL 입력" />
+        </div>
+        <!-- right - 아이콘 -->
+        <div class="right">
+          <a href="#"><img src="images/Frame.png" alt="검색" /></a>
+          <a href="#"
+            ><img src="images/googlemic_color_24dp.png" alt="음석"
+          /></a>
+          <button class="ai-btn" title="Google 검색의 AI 모드에서 질문하기">
+            <img src="images/search_spark.svg" alt="서치" />AI 모드
+          </button>
+        </div>
+      </div>
+      <!-- 검색리스트 -->
+      <div class="container">
+        <div class="search-plus">
+          <ul>
+            <!-- 네이버 -->
+            <li>
+              <a href="#">
+                <div class="roundbox">
+                  <img src="images/naver.png" alt="네이버아이콘" />
+                </div>
+                <p>NAVER</p>
+              </a>
+              <div class="more">
+                <img src="images/icon_more_vert.svg" alt="더보기" />
+              </div>
+            </li>
+            <!-- 노션 -->
+            <li>
+              <a href="#" id="notion">
+                <div class="roundbox">
+                  <img src="images/notion_icon.png" alt="노션아이콘" />
+                </div>
+                <p>Notion</p>
+              </a>
+              <div class="more">
+                <img src="images/icon_more_vert.svg" alt="더보기" />
+              </div>
+            </li>
+            <!-- 깃허브 -->
+            <li>
+              <a href="#" id="Git-hub">
+                <div class="roundbox">
+                  <img src="images/github_icon.png" alt="깃허브아이콘" />
+                </div>
+                <p>Git-hub</p>
+              </a>
+              <div class="more">
+                <img src="images/icon_more_vert.svg" alt="더보기" />
+              </div>
+            </li>
+            <!-- 핀터레스트 -->
+            <li>
+              <a href="#" id="pinterest">
+                <div class="roundbox">
+                  <img src="images/pinterest_logo.png" alt="핀터레스트아이콘" />
+                </div>
+                <p>Pinterest</p>
+              </a>
+              <div class="more">
+                <img src="images/icon_more_vert.svg" alt="더보기" />
+              </div>
+            </li>
+            <!-- 바로가기 추가 -->
+            <li>
+              <a href="#">
+                <div class="roundbox" id="plus"><span>+</span></div>
+                <p>바로가기 추가</p>
+              </a>
+              <div class="more">
+                <img src="images/icon_more_vert.svg" alt="더보기" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 검색 버튼 -->
+    </main>
+  </body>
 </html>
