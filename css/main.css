@@ -209,13 +209,18 @@ nav > a:hover {
 }
 
 /* 바로가기 */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .search-plus {
   width: 100%;
   max-width: 1000px;
   min-width: 250px;
   background-color: #ff6ec4;
 }
-.search-plus ul {
+.main-wrap .search-plus ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -237,6 +242,6 @@ nav > a:hover {
 }
 #notion img,
 #pinterest img,
-#Git-hub img{
+#Git-hub img {
   width: 100%;
 }
