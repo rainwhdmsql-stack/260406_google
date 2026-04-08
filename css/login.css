@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+i{
+    color: #777;
+    display: block;
+}
+/* 전체 레이아웃 */
+.container{
+    max-width: 350px;
+    min-width: 300px;
+    margin: 150px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #ddd;
+}
+button{
+    width: 100%;;
+    padding: 8px;
+    border: 0;
+    border-radius: 3px;
+}
+button:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+button img{
+    width: 24px;
+}
+form{
+    width: 100%;
+}
+/* 폼 1개 영역 (id , pw) */
+.input-gr{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+    outline: none;
+}
+.input-gr input::placeholder{
+    color: #ddd;
+}
+
+/* 클래스 따로 안줬을 경우) 많은 버튼 중에 로그인 버튼만 선택하고 싶을 시 > 속성 선택 */
+button[type="submit"]{
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(0, 174, 255);
+}
+
+/* 로그인 페이지 하단, sns 로그인하기 */
+#otherLogin{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: #ededed;
+    align-items: center;
+}
